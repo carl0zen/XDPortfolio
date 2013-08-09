@@ -32,14 +32,14 @@
   |                         HEADER                             |
   |..--------------------------------------------------------..|*/
   
-$headerBg: #333;
+$headerBg: transparent;
 $headerHeight:70px;
 $headerBgImage: none;
 $headerIsGradient: false;
 $headerBgBottom: transparent; //Bottom color for the header
 $headerGradientPosition: top;
 
-$logoSrc: '../img/logo.png';
+$logoSrc: '../img/logo-xd.svg';
 $logoWidth: 343px;
 $logoHeight: 107px;
 
@@ -86,13 +86,13 @@ $defaultMargin: 10px;
   $sidebarBgColor: #EEEEEE;
 
   /*...................Headings.....................*/
-  $headingFont: sans-serif ;
+  $headingFont: 'signikasemibold' ;
   $headingFontWeight: bold;
   
-  $h1FontSize: 28px;
+  $h1FontSize: 3.125em;
 
-  $h1Color: $black;
-  $h2Color: $h1Color;
+  $h1Color: $white;
+  $h2Color: $black;
   $h3Color: $h1Color;
   $h4Color: $h1Color;
   $h5Color: $h1Color;
@@ -156,8 +156,8 @@ $footerMenuFontColor: $defaultFontColor;
   |..--------------------------------------------------------..|*/
 
   $default-transition-property : all;
-  $default-transition-duration : 0.2s;
-  $default-transition-function : ease;    //[ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2)]
+  $default-transition-duration : 0.3s;
+  $default-transition-function : ease-in;    //[ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2)]
   $default-transition-delay    : false;
 
 

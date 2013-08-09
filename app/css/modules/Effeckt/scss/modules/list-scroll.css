@@ -1,0 +1,135 @@
+/* line 2, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+.effeckt-list-scroll {
+  position: relative;
+  width: 230px;
+  height: 480px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  list-style: none;
+  perspective: 400px;
+}
+/* line 12, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+.effeckt-list-scroll > li {
+  position: relative;
+  padding: 0.5rem;
+  background: #eee;
+  color: #252525;
+  font-size: 18px;
+  z-index: 2;
+  transform: translateZ(0);
+}
+/* line 20, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+.effeckt-list-scroll > li:nth-child(odd) {
+  background: #e6e6e6;
+}
+
+/* line 28, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="grow"] li {
+  transition: all 600ms ease;
+  transform-origin: 50% 50%;
+}
+/* line 31, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="grow"] li.past {
+  transform: scale(0.01);
+}
+/* line 34, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="grow"] li.future {
+  transform: scale(0.01);
+}
+
+/* line 41, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="curl"] li {
+  perspective: 600px;
+  perspective-origin: 0% 50%;
+}
+
+/* line 45, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="curl"] li {
+  transition: all 600ms ease, opacity 200ms ease;
+  transform-origin: 0% 0%;
+  backface-visibility: hidden;
+}
+
+/* line 51, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="curl"] li.past {
+  opacity: 0;
+  transform: rotateY(90deg);
+}
+
+/* line 55, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="curl"] li.future {
+  opacity: 0;
+  transform: rotateY(90deg);
+}
+
+/* line 62, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="wave"] li {
+  transition: all 600ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/* line 65, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="wave"] li.past {
+  transform: translateX(-70%);
+}
+
+/* line 68, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="wave"] li.future {
+  transform: translateX(-70%);
+}
+
+/* line 74, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fan"] li {
+  transition: all 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  transform-origin: 0% 0%;
+}
+
+/* line 78, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fan"] li.past {
+  transform: rotate(-60deg);
+}
+
+/* line 81, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fan"] li.future {
+  transform: rotate(70deg);
+}
+
+/* line 87, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fade"] li {
+  transition: opacity .35s ease-in-out;
+}
+
+/* line 90, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fade"] li.past {
+  opacity: 0;
+}
+
+/* line 93, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fade"] li.future {
+  opacity: 0;
+}
+
+/* line 99, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fly"] {
+  perspective: 400px;
+  perspective-origin: 50% 50%;
+}
+
+/* line 103, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fly"] li {
+  transition: all 600ms ease, opacity 300ms ease;
+  transform-origin: 50% 50% -50px;
+}
+
+/* line 107, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fly"] li.past {
+  opacity: 0;
+  transform: rotateX(180deg);
+}
+
+/* line 111, ../../../../../../_engine/modules/Effeckt/scss/modules/list-scroll.scss */
+[data-effeckt="fly"] li.future {
+  opacity: 0;
+  transform: rotateX(-180deg);
+}

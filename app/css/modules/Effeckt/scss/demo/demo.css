@@ -1,0 +1,343 @@
+/* line 5, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 13, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.no-transitions,
+.no-transitions * {
+  transition: none !important;
+}
+
+/* line 18, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 24, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+:root {
+  font-size: large;
+  line-height: 1.4;
+}
+@media (max-width: 500px) {
+  /* line 24, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  :root {
+    font-size: small;
+  }
+}
+
+/* line 33, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 37, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+body {
+  background: #eee;
+  font-family: Sans-serif;
+  overflow-x: hidden;
+  padding: 4rem;
+}
+@media (max-width: 500px) {
+  /* line 37, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  body {
+    padding: 1rem;
+  }
+}
+
+/* line 53, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.page-wrap {
+  float: right;
+  width: 100%;
+}
+
+/* line 58, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.effeckt {
+  padding: 2rem;
+  background: white;
+  margin: 0 0 1rem 0;
+}
+@media (max-width: 500px) {
+  /* line 58, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  .effeckt {
+    padding: 1.5rem;
+  }
+}
+/* line 65, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.effeckt header {
+  margin: 0 0 1rem 0;
+  border-bottom: 2px solid #eee;
+  position: relative;
+}
+/* line 69, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.effeckt header .source {
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+}
+@media (max-width: 500px) {
+  /* line 69, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  .effeckt header .source {
+    position: relative;
+    display: block;
+    margin: 0.2rem 0;
+  }
+}
+
+/* line 81, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.button-group {
+  line-height: 2;
+}
+
+/* line 88, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* line 92, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+a:hover, a:active {
+  color: black;
+}
+
+/* line 95, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+subhead {
+  display: block;
+  font-size: 1.4rem;
+  margin: 0 0 2rem 0;
+}
+
+/* line 100, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.mobile-break {
+  display: none;
+}
+@media (max-width: 500px) {
+  /* line 100, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  .mobile-break {
+    display: block;
+  }
+}
+
+/* line 106, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 {
+  margin: 0 0 1rem 0;
+}
+@media (max-width: 500px) {
+  /* line 106, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  h1 {
+    line-height: 0.8;
+  }
+}
+
+/* line 112, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span {
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #ccc;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  /* line 112, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  h1 span {
+    font-size: 0.8rem;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+  }
+}
+
+/* line 131, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h2 {
+  margin: 0;
+}
+
+/* line 134, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h3 {
+  margin: 0;
+}
+
+/* line 137, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+/* line 140, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+p {
+  margin: 0 0 1rem 0;
+}
+
+/* line 144, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+button {
+  padding: 0.25rem;
+}
+
+/* line 148, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(1) {
+  animation: logo-from-horz 0.5s ease forwards;
+  transform: translateX(-50px);
+  background: #666;
+}
+
+/* line 153, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(2) {
+  animation: logo-from-vert 0.5s 0.1s ease forwards;
+  transform: translateY(-50px);
+  background: #444;
+}
+
+/* line 158, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(3) {
+  animation: logo-from-vert 0.5s 0.2s ease forwards;
+  transform: translateX(50px);
+  background: #666;
+}
+
+/* line 163, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(4) {
+  animation: logo-from-horz 0.3s 0.3s ease forwards;
+  transform: translateX(50px);
+  background: #444;
+}
+
+/* line 168, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(5) {
+  animation: logo-from-horz 0.3s 0.4s ease forwards;
+  transform: translateX(-50px);
+  background: #666;
+}
+
+/* line 173, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(6) {
+  animation: logo-from-horz 0.3s 0.5s ease forwards;
+  transform: translateX(50px);
+  background: #444;
+}
+
+/* line 178, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(7) {
+  animation: logo-from-vert 0.3s 0.6s ease forwards;
+  transform: translateY(-50px);
+  background: #666;
+}
+
+/* line 183, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(8) {
+  animation: logo-from-horz 0.2s 1.1s ease forwards;
+  transform: translateX(1000px);
+  background: none;
+  color: black;
+}
+
+/* line 189, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(9) {
+  animation: logo-from-horz 0.2s 1.1s ease forwards;
+  transform: translateX(1000px);
+}
+
+/* line 193, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(10) {
+  animation: logo-from-horz 0.2s 1.1s ease forwards;
+  transform: translateX(1000px);
+}
+
+/* line 197, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+h1 span:nth-of-type(11) {
+  animation: logo-from-horz 0.2s 1.1s ease forwards;
+  transform: translateX(1000px);
+}
+
+@keyframes logo-from-horz {
+  /* line 202, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes logo-from-vert {
+  /* line 205, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* line 212, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.contributors {
+  background: #222;
+  color: #eee;
+}
+/* line 215, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.contributors header {
+  border-bottom-color: #666;
+}
+
+/* line 226, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.button-demo-wrap {
+  width: 35%;
+  float: left;
+}
+/* line 229, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.button-demo-wrap:nth-child(2n) {
+  clear: both;
+}
+@media (max-width: 500px) {
+  /* line 226, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  .button-demo-wrap {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* line 239, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.effeckt-list-wrap {
+  width: 50%;
+  float: left;
+  margin: 0 0 2rem 0;
+}
+/* line 243, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.effeckt-list-wrap:nth-child(even) {
+  clear: both;
+}
+
+/* line 251, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.effeckt-demo-list-scroll > ul {
+  width: 32%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+/* line 256, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.effeckt-demo-list-scroll > ul:nth-of-type(3n) {
+  margin-right: 0;
+}
+@media (max-width: 500px) {
+  /* line 251, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+  .effeckt-demo-list-scroll > ul {
+    width: 100%;
+    float: none;
+    height: 250px;
+    margin: 0 0 1rem 0;
+  }
+}
+
+/* line 270, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+.effeckt-toggle-demo {
+  min-height: 220px;
+}
+
+/* line 273, ../../../../../../_engine/modules/Effeckt/scss/demo/demo.scss */
+[data-toggle-trigger] {
+  margin-bottom: 20px;
+}

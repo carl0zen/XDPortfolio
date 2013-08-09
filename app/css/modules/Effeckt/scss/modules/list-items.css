@@ -1,0 +1,201 @@
+/* line 4, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list {
+  list-style: none;
+}
+/* line 6, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list li {
+  background: #e6e6e6;
+  padding: 0 0.5rem;
+  overflow: hidden;
+  margin-bottom: 2px;
+  line-height: 2;
+}
+/* line 12, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list li.new-item {
+  background: #ccc;
+}
+
+/* line 19, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list[data-type='pop-in'] {
+  overflow: hidden;
+}
+
+/* line 22, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list[data-type='pop-in'] .new-item {
+  max-height: 0;
+  opacity: 0;
+  transform: translateX(-300px);
+  animation: openSpace 0.2s ease forwards, moveIn 0.3s 0.2s ease forwards;
+}
+
+/* line 30, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list[data-type='pop-in'] .remove-item {
+  max-height: 50px;
+  opacity: 1;
+  animation: moveOut 0.3s 0.2s ease forwards, closeSpace 0.2s ease forwards 0.3s;
+}
+
+@keyframes openSpace {
+  /* line 38, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  to {
+    max-height: 50px;
+  }
+}
+
+@keyframes moveIn {
+  /* line 43, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveOut {
+  /* line 49, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  to {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+}
+
+@keyframes closeSpace {
+  /* line 55, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  to {
+    max-height: 0px;
+  }
+
+  /* line 58, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  from {
+    max-height: 50px;
+  }
+}
+
+/* line 65, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list[data-type='expand-in'] .new-item {
+  max-height: 0;
+  opacity: 0;
+  transform: scale(0);
+  animation: growHeight 0.2s ease forwards;
+}
+
+/* line 71, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list[data-type='expand-in'] .remove-item {
+  animation: shrinkHeight 0.2s ease forwards;
+}
+
+@keyframes growHeight {
+  /* line 75, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  to {
+    max-height: 50px;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shrinkHeight {
+  /* line 83, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  to {
+    max-height: 0;
+    opacity: 1;
+    transform: scale(0);
+  }
+
+  /* line 88, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  from {
+    max-height: 50px;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* line 96, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list[data-type='wobble-in'] .new-item {
+  backface-visibility: visible;
+  animation: WobbleInX 1s both 0.2s, openSpace 0.2s ease forwards;
+}
+
+/* line 102, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list[data-type='wobble-in'] .remove-item {
+  backface-visibility: visible;
+  animation: WobbleOutX 1s both 0.2s, closeSpace 0.2s ease forwards 1s;
+}
+
+@keyframes WobbleInX {
+  /* line 109, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  0% {
+    transform: perspective(250px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 113, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  40% {
+    transform: perspective(250px) rotateX(-10deg);
+  }
+
+  /* line 116, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  70% {
+    transform: perspective(250px) rotateX(10deg);
+  }
+
+  /* line 119, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  100% {
+    transform: perspective(250px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes WobbleOutX {
+  /* line 125, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  0% {
+    transform: perspective(250px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 129, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  100% {
+    transform: perspective(250px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+/* line 137, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list[data-type='flip-in'] .new-item {
+  backface-visibility: visible;
+  transform-origin: top left;
+  animation: FlipIn 1s both 0.2s, openSpace 0.2s ease forwards;
+}
+
+/* line 144, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+.effeckt-list[data-type='flip-in'] .remove-item {
+  backface-visibility: visible;
+  transform-origin: top left;
+  animation: FlipOut 1s both 0.2s, closeSpace 0.6s ease forwards 0.6s;
+}
+
+@keyframes FlipIn {
+  /* line 152, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  0% {
+    transform: perspective(300px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  /* line 156, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  100% {
+    transform: perspective(300px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes FlipOut {
+  /* line 162, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+
+  /* line 166, ../../../../../../_engine/modules/Effeckt/scss/modules/list-items.scss */
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+}

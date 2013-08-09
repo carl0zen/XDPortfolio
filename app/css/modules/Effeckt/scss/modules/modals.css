@@ -1,0 +1,569 @@
+/* line 3, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-perspective,
+.md-perspective body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 11, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-perspective body {
+  perspective: 600px;
+}
+
+/* line 17, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-modal-wrap {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  z-index: 2000;
+  display: none;
+}
+
+/* line 34, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-modal {
+  visibility: hidden;
+  backface-visibility: hidden;
+  background: white;
+}
+/* line 38, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-modal h3 {
+  padding: 1rem;
+  color: white;
+  background: #444;
+}
+
+/* line 44, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-modal-content {
+  padding: 1rem;
+}
+
+/* line 48, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show .effeckt-modal {
+  visibility: visible;
+}
+
+/* line 51, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-overlay.effeckt-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 57, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+/*
+  Individual modal styles with animations/transitions
+*/
+/* Effect 1: From Above */
+/* line 76, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-1 .effeckt-modal {
+  transform: scale(0.5);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* line 81, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-1 .effeckt-modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Effect 5: From below*/
+/* line 88, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-5 .effeckt-modal {
+  transform: scale(1.5);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* line 93, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-5 .effeckt-modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Effect 2: Slide from the right */
+/* line 100, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-2 .effeckt-modal {
+  transform: translateX(30%);
+  opacity: 0;
+  transition: 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+/* line 105, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-2 .effeckt-modal {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Effect 3: Slide from the bottom */
+/* line 112, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-3 .effeckt-modal {
+  transform: translateY(30%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* line 117, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-3 .effeckt-modal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Effect 4: Newspaper */
+/* line 124, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-4 .effeckt-modal {
+  transform: scale(0.5) rotate(720deg);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* line 129, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-4 .effeckt-modal {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+/* Effect 6: side fall */
+/* line 136, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-6.effeckt-modal-wrap {
+  perspective: 1300px;
+  transform-style: preserve-3d;
+}
+
+/* line 140, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-6 .effeckt-modal {
+  transform: translateZ(600px) translateX(30%) rotate(10deg);
+  opacity: 0;
+}
+
+/* line 145, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-6 .effeckt-modal {
+  transition: 0.3s ease-in;
+  transform: translateZ(0) translateX(0) rotate(0deg);
+  opacity: 1;
+}
+
+/* Effect 7:  slide and stick to top */
+/* line 153, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-7 {
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* line 157, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-7 .effeckt-modal {
+  transform: translateY(-100%);
+  transition: all .3s;
+  opacity: 0;
+}
+
+/* line 162, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-7 .effeckt-modal {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Effect 8: 3D flip horizontal */
+/* line 169, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-8 {
+  perspective: 1300px;
+  transform-style: preserve-3d;
+}
+
+/* line 173, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-8 .effeckt-modal {
+  transform: rotateY(-70deg);
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+/* line 178, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-8 .effeckt-modal {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+/* Effect 9: 3D flip vertical */
+/* line 185, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-9 {
+  perspective: 1300px;
+  transform-style: preserve-3d;
+}
+
+/* line 189, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-9 .effeckt-modal {
+  transform: rotateX(-70deg);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+/* line 194, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-9 .effeckt-modal {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+/* Effect 10: 3D sign */
+/* line 201, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-10 {
+  perspective: 1300px;
+  transform-style: preserve-3d;
+}
+
+/* line 205, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-10 .effeckt-modal {
+  transform: rotateX(-60deg);
+  transform-origin: 50% 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* line 211, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-10 .effeckt-modal {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+/* Effect 12:  Just me */
+/* line 217, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-12 .effeckt-modal {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* line 221, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-12 .effeckt-modal {
+  opacity: 1;
+  background: #555;
+}
+
+/* line 225, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-12 ~ .effeckt-overlay {
+  background: #555;
+}
+
+/* line 229, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-12,
+.md-effect-12 h3 {
+  background: transparent;
+}
+
+/* Effect 13: 3D slit */
+/* line 235, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-13 {
+  perspective: 1300px;
+  transform-style: preserve-3d;
+}
+
+/* line 239, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-13 .effeckt-modal {
+  transform: translateZ(-3000px) rotateY(90deg);
+  opacity: 0;
+}
+
+/* line 243, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-13 .effeckt-modal {
+  animation: slit 0.7s forwards ease-out;
+}
+
+@keyframes slit {
+  /* line 247, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+  50% {
+    transform: translateZ(-250px) rotateY(89deg);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+
+  /* line 252, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+  100% {
+    transform: translateZ(0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/* Effect 14:  3D Rotate from bottom */
+/* line 260, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-14 {
+  perspective: 1300px;
+  transform-style: preserve-3d;
+}
+
+/* line 264, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-14 .effeckt-modal {
+  transform: translateY(100%) rotateX(90deg);
+  transform-origin: 0 100%;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+/* line 270, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-14 .effeckt-modal {
+  transform: translateY(0%) rotateX(0deg);
+  opacity: 1;
+}
+
+/* Effect 15:  3D Rotate in from left */
+/* line 277, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-15 {
+  perspective: 1300px;
+  transform-style: preserve-3d;
+}
+
+/* line 281, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-15 .effeckt-modal {
+  transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+  transform-origin: 0 100%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+/* line 287, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-15 .effeckt-modal {
+  transform: translateZ(0px) translateX(0%) rotateY(0deg);
+  opacity: 1;
+}
+
+/* Effect 16:  Blur */
+/* line 294, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-16 ~ .md-overlay {
+  background: rgba(180, 46, 32, 0.5);
+}
+
+/* line 297, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-16 ~ .page-wrap {
+  filter: blur(3px);
+}
+
+/* line 300, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-16 .effeckt-modal {
+  opacity: 0;
+}
+
+/* line 304, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-16 ~ .page-wrap,
+.md-effect-16 .effeckt-modal {
+  transition: all 0.3s;
+}
+
+/* line 307, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-16 .effeckt-modal {
+  opacity: 1;
+}
+
+/* Effect 17:  Slide in from bottom with perspective on container */
+/* line 313, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-17 ~ .page-wrap {
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+/* line 319, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-17 ~ .page-wrap,
+.effeckt-show.md-effect-17 ~ .effeckt-overlay {
+  transform: rotateX(-2deg);
+  transform-origin: 50% 0%;
+  transform-style: preserve-3d;
+}
+
+/* line 324, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-17 .effeckt-modal {
+  opacity: 0;
+  transform: translateY(200%);
+}
+
+/* line 328, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-17 .effeckt-modal {
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: all 0.3s 0.2s;
+}
+
+/* Effect 18:  Slide from right with perspective on container */
+/* line 336, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-18 ~ .page-wrap {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 340, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-18 ~ .effeckt-overlay {
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+
+/* line 345, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-18 ~ .page-wrap,
+.effeckt-show.md-effect-18 ~ .effeckt-overlay {
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  animation: rotateRightSideFirst 0.5s forwards ease-in;
+}
+
+@keyframes rotateRightSideFirst {
+  /* line 351, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+  50% {
+    transform: translateZ(-50px) rotateY(5deg);
+    animation-timing-function: ease-out;
+  }
+
+  /* line 355, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+  100% {
+    transform: translateZ(-200px);
+  }
+}
+
+/* line 359, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-18 .effeckt-modal {
+  transform: translateX(200%);
+  opacity: 0;
+}
+
+/* line 363, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-18 .effeckt-modal {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.5s 0.1s;
+}
+
+/* Effect 19:  Slip in from the top with perspective on container */
+/* line 371, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-19 ~ .page-wrap {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 375, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-19 ~ .effeckt-overlay {
+  transition: all 0.5s;
+}
+
+/* line 379, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-19 ~ .page-wrap,
+.effeckt-show.md-effect-19 ~ .effeckt-overlay {
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  animation: OpenTop 0.5s forwards ease-in;
+}
+
+@keyframes OpenTop {
+  /* line 385, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+  50% {
+    transform: rotateX(10deg);
+    animation-timing-function: ease-out;
+  }
+}
+
+/* line 390, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-19 .effeckt-modal {
+  transform: translateY(-200%);
+  opacity: 0;
+}
+
+/* line 394, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-19 .effeckt-modal {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.5s 0.1s;
+}
+
+/* Effect 20: From the top to bottom with left tilt on the way out */
+/* line 402, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-20 {
+  transition: 0.3s ease-in-out;
+  transform: -50% -50%;
+  top: -100%;
+  opacity: 0;
+}
+
+/* line 408, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-20 {
+  top: 50%;
+  opacity: 1;
+}
+
+/* line 412, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-hide.md-effect-20 {
+  top: 100%;
+  transform: translateX(-50%) rotate(-29deg);
+  opacity: 0;
+}
+
+/* Effect 22: From the top to bottom */
+/* line 420, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-22 {
+  transition: 0.3s ease-in-out;
+  transform: -50% -50%;
+  top: -100%;
+  opacity: 0;
+}
+
+/* line 426, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-22 {
+  top: 50%;
+  opacity: 1;
+}
+
+/* line 430, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-hide.md-effect-22 {
+  top: 100%;
+  opacity: 0;
+}
+
+/* Effect 23: From the bottom to bottom */
+/* line 437, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-23 {
+  transition: 0.3s ease-in-out;
+  transform: -50% -50%;
+  top: 100%;
+  opacity: 0;
+}
+
+/* line 443, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-23 {
+  top: 50%;
+  opacity: 1;
+}
+
+/* line 447, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-hide.md-effect-23 {
+  top: 100%;
+  opacity: 0;
+}
+
+/* Effect 24: From the top to top */
+/* line 454, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.md-effect-24 {
+  transition: 0.3s ease-in-out;
+  transform: -50% -50%;
+  top: -100%;
+  opacity: 0;
+}
+
+/* line 460, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-show.md-effect-24 {
+  top: 50%;
+  opacity: 1;
+}
+
+/* line 464, ../../../../../../_engine/modules/Effeckt/scss/modules/modals.scss */
+.effeckt-hide.md-effect-24 {
+  top: -100%;
+  opacity: 0;
+}

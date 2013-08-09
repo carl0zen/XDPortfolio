@@ -24,11 +24,7 @@
                     .script('js/vendor/jquery.js').wait(function(){
 
                     })
-                    .script('js/vendor/hammer.js')
-                    .script('js/vendor/angular.js').wait(function(){
-                        angular.bootstrap(document, ['myApp'])
-                    })
-                    .script('js/vendor/angular-hammer.js')
+                    .script('js/modules.js')
                     .script('js/app.js');
         </script>
     </head>
@@ -39,20 +35,721 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         <header>
-
             <div class="wrapper">
-                <div class="logo"></div>
-                <a href="#">Home</a>
-                <a href="#view1">View1</a>
-                <a href="#view2">View2</a>
+                <img id="xdlogo" src="img/logo-xd.svg" alt="XD Monterrey" class="svg">
+                <img id="avanade-logo" src="img/logo-avanade.svg" alt="Logo Avanade" class="svg"/>
             </div>
-
-            
-            
         </header>
-        <div id="content" class="wrapper" >
-        </div>
-
+        <section id="stage">
+                <div class="title">
+                    <div class="wrapper" >
+                        <h1>Ceating delightful experiencies that amaze the user</h1>
+                    </div>
+                </div>
+                <section id="menu" class="menu">
+                    <div class="wrapper">
+                    <ul>
+                        <li>
+                            <a href="#whatwedo">
+                                <span class="icon">1</span>
+                                <span class="text">What we do  </span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="#howwedoit"><spa
+                                n class="icon">2</span>
+                                <span class="text">How we do it</span>
+                                </a>
+                        </li>
+                        <li>
+                            <a href="#whoweare">
+                                <span class="icon">3</span>
+                                <span class="text">Who whe are </span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="#ourculture">
+                                <span class="icon">4</span>
+                                <span class="text">Our culture </span> 
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </section>
+            </section>
+        <section>
+        <section id="content" class="wrapper" >
+            
+            <aside id="leftmenu">
+                <ul>
+                    <li>
+                        <span class="icon">1</span> 
+                    </li>
+                    <li>
+                        <span class="icon">2</span> 
+                    </li>
+                    <li>
+                        <span class="icon">3</span> 
+                    </li>
+                    <li>
+                        <span class="icon">4</span> 
+                    </li>
+                </ul>
+            </aside>
+            <section id="belowthefold">
+                <article class="quote">
+                    Design is so simple, that's why it is so complicated
+                    <div class="author">- Paul Rand</div>
+                </article>
+                <article class="hire-us">
+                    <a href="#contact" class="button">Hire-us</a>
+                    <p>We work with amazing clients, are you ready to be the next?</p>
+                </article>
+            </section>
+            <section id="whatwedo">
+                <h2>What we do</h2>
+                <article class="ux">
+                    <div class="icon"></div>
+                    <h3>UX Architecture</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, qui, dolores, commodi, eligendi</p>
+                </article>
+                <article class="ui">
+                    <div class="icon"></div>
+                    <h3>UI Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, qui, dolores, commodi, eligendi</p>
+                </article>
+                <article class="development">
+                    <div class="icon"></div>
+                    <h3>Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, qui, dolores, commodi, eligendi</p>
+                </article>
+                <article class="hire-us">
+                    <a href="#contact" class="button">Hire-us</a>
+                    <p>We work with amazing clients, are you ready to be the next?</p>
+                </article>
+            </section>
+            <section id="howwedoit">
+                <div class="slider">
+                    <article class="discover">
+                        <div class="icon"></div>
+                        <h3>Discover</h3>
+                        <p>Research to define user scenarios and conceptual model</p>
+                    </article>
+                    <article class="wireframing">
+                        <div class="icon"></div>
+                        <h3>Wireframing</h3>
+                        <p>Define the workflow, architecture and interaction design</p>
+                    </article>
+                    <article class="visualdesign">
+                        <div class="icon"></div>
+                        <h3>Visual Design</h3>
+                        <p>Style guide creation, typography selection and icon design</p>
+                    </article>
+                    <article class="development">
+                        <div class="icon"></div>
+                        <h3>Development</h3>
+                        <p>Code the Front-end interface using the appropriate technologies</p>
+                    </article>
+                    
+                </div>
+                <div class="controls">
+                        <ul>
+                        <li><span class="icon discover"></span></li>
+                        <li><span class="icon wireframing"></span></li>
+                        <li><span class="icon visualdesign"></span></li>
+                        <li><span class="icon development"></span></li>
+                <li><span class="icon review"></span></li>
+                        <li><span class="icon useracceptance"></span></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="whoweare">
+                <h2>Meet each one of us</h2>
+                <ul id="people-grid">
+                    <li>
+                        <a href="people/1.html" 
+                            data-largeimg="img/people/1.jpg" 
+                            data-title="Obed Ramírez" 
+                            data-description="Design Comps, HTML5 & CSS3, Wireframes, Style guides, Multimedia, Corporate ID, Prototyping, Adobe Suite.">
+                            <span class="item"> 
+                                 <span class="info">   
+                                    <span class="front pic1"></span>
+                                    <span class="back">
+                                    Obed Ramírez
+                                        <span class="role">Visual Design / Data Visualization</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/1.jpg" alt="Obed Ramírez">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Obed Ramírez</h3>
+                                    <h4>Visual Design / Data Visualization</h4>
+                                    <p>Design Comps, HTML5 & CSS3, Wireframes, Style guides, Multimedia, Corporate ID, Prototyping, Adobe Suite.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a  href="people/2.html" 
+                            data-largeimg="img/people/2.jpg" 
+                            data-title="Nohemí Olvera" 
+                            data-description="Information Architecure, User Interface, User Experience, Visual Design, Prototyping, Adobe Suite.">
+                            <span class="item"> 
+                                 <span class="info">   
+                                    <span class="front pic2"></span>
+                                    <span class="back">
+                                    Nohemí Olvera
+                                        <span class="role">Visual Design / Data Visualization</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/2.jpg" alt="Nohemí Olvera">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Nohemí Olvera</h3>
+                                    <h4>Visual Design / Data Visualization</h4>
+                                    <p>Information Architecure, User Interface, User Experience, Visual Design, Prototyping, Adobe Suite.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/3.html" data-largeimg="img/people/3.jpg" data-title="Liliana Mendoza" data-description="Design Comps, UI Design, HTML, Wireframes, Style guides, CMS Customization, Prototyping, Adobe Suite.">
+                            <span class="item"> 
+                                 <span class="info">   
+                                    <span class="front pic3"></span>
+                                    <span class="back">
+                                    Liliana Mendoza
+                                        <span class="role">User Interface Designer</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/3.jpg" alt="Liliana Mendoza">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Liliana Mendoza</h3>
+                                    <h4>User Interface Designer</h4>
+                                    <p>Design Comps, UI Design, HTML, Wireframes, Style guides, CMS Customization, Prototyping, Adobe Suite.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/4.html" data-largeimg="img/people/4.jpg" data-title="Mayra Pulido" data-description="Design Comps, User Interface, UX, HTML & CSS, Branding, Prototyping, Adobe Suite, After Effects.">
+                            <span class="item"> 
+                                 <span class="info">   
+                                    <span class="front pic4"></span>
+                                    <span class="back">
+                                    Mayra Pulido
+                                        <span class="role">User Interface Designer</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/4.jpg" alt="Mayra Pulido">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Mayra Pulido</h3>
+                                    <h4>User Interface Designer</h4>
+                                    <p>Design Comps, User Interface, UX, HTML & CSS, Branding, Prototyping, Adobe Suite, After Effects.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/5.html" data-largeimg="img/people/5.jpg" data-title="Antonio Fraga" data-description="Design Comps, HTML5 & CSS3, Wireframes, Screen flows, Style guides, Concepts, Prototyping, Adobe Suite.">
+                            <span class="item"> 
+                                 <span class="info">   
+                                    <span class="front pic5"></span>
+                                    <span class="back">
+                                    Antonio Fraga
+                                        <span class="role">User Interface Designer</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/5.jpg" alt="Antonio Fraga">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Antonio Fraga</h3>
+                                    <h4>User Interface Designer</h4>
+                                    <p>Design Comps, HTML5 & CSS3, Wireframes, Screen flows, Style guides, Concepts, Prototyping, Adobe Suite.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/6.html" data-largeimg="img/people/6.jpg" data-title="Alberto Quiñonez" data-description="User Interface Design, Mobile Interface Design, Interaction. Design, Wireframing, UX Design, Usability, Information Architecture, Prototyping, Iconography, Digital Art.">
+                            <span class="item"> 
+                                 <span class="info">   
+                                    <span class="front pic6"></span>
+                                    <span class="back">
+                                    Alberto Quiñonez
+                                        <span class="role">User Interface Designer</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/6.jpg" alt="Alberto Quiñonez">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Alberto Quiñonez</h3>
+                                    <h4>User Interface Designer</h4>
+                                    <p>User Interface Design, Mobile Interface Design, Interaction Design, Wireframing, UX Design, Usability, Information Architecture, Prototyping, Iconography, Digital Art.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/7.html" data-largeimg="img/people/7.jpg" data-title="Rodrigo Cavazos" data-description="Design Comps, Wireframing, User Interface, User Experience, Branding, Digital 3D Art, Typography, HTML & CSS, Prototyping, Adobe Suite.">
+                            <span class="item"> 
+                                 <span class="info">   
+                                    <span class="front pic7"></span>
+                                    <span class="back">
+                                    Rodrigo Cavazos
+                                        <span class="role">User Interface Designer</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/7.jpg" alt="Rodrigo Cavazos">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Rodrigo Cavazos</h3>
+                                    <h4>User Interface Designer</h4>
+                                    <p>Design Comps, Wireframing, User Interface, User Experience, Branding, Digital 3D Art, Typography, HTML & CSS, Prototyping, Adobe Suite.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/8.html" data-largeimg="img/people/8.jpg" data-title="Oscar Rodríguez" data-description="HTML5, CSS3, Java Script, jQuery, Adobe Suite, UI Design.">
+                            <span class="item"> 
+                                 <span class="info">   
+                                    <span class="front pic8"></span>
+                                    <span class="back">
+                                    Oscar Rodríguez
+                                        <span class="role">Front-end Developer</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/8.jpg" alt="Oscar Rodríguez">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Oscar Rodríguez</h3>
+                                    <h4>Front-end Developer</h4>
+                                    <p>HTML5, CSS3, Java Script, jQuery, Adobe Suite, UI Design.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/9.html" data-largeimg="img/people/9.jpg" data-title="Lizeth Vázquez" data-description="HTML5, CSS3, Java Script, jQuery, Adobe Suite, UI Design.">
+                            <span class="info">   
+                                <span class="front pic9"></span>
+                                <span class="back">
+                                    Lizethe Vázquez
+                                    <span class="role">Front-end Developer</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/9.jpg" alt="Lizeth Vázquez">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Lizeth Vázquez</h3>
+                                    <h4>Front-end Developer</h4>
+                                    <p>HTML5, CSS3, Java Script, jQuery, Adobe Suite, UI Design.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/10.html" data-largeimg="img/people/10.jpg" data-title="Carlos Pérez Priego" data-description="HTML5, CSS3, Sass, Java Script, jQuery UI, Frameworks, UI Design, Adobe Suite.">
+                            <span class="info">   
+                                <span class="front pic10"></span>
+                                <span class="back">
+                                    Carlos Pérez Priego
+                                    <span class="role">Front-end Developer</span>
+                                </span>
+                            </span>                            
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/10.jpg" alt="Carlos Pérez Priego">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Carlos Pérez Priego</h3>
+                                    <h4>Front-end Engineer</h4>
+                                    <p>HTML5, CSS3, Sass, Java Script, jQuery UI, Frameworks, UI Design, Adobe Suite.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/11.html" data-largeimg="img/people/11.jpg" data-title="Oscar González" data-description="UX Design-UX Research, Usability Testing, Interaction design,Front-End Development, Prototyping, Wireframing, Photography, Ecommerce Strategy.">
+                            <span class="info">   
+                                <span class="front pic11"></span>
+                                <span class="back">
+                                    Oscar González
+                                    <span class="role">UX Architect</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/11.jpg" alt="Oscar González">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Oscar González</h3>
+                                    <h4>UX Architect</h4>
+                                    <p>UX Design-UX Research, Usability Testing, Interaction design, Front-End Development, Prototyping, Wireframing, Photography, Ecommerce Strategy.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/12.html" data-largeimg="img/people/12.jpg" data-title="Homero Menchaca" data-description="UX Design, Usability Testing, UX Research, Interaction design, Front-End Development, Prototyping, Wireframing.">
+                            <span class="info">   
+                                <span class="front pic12"></span>
+                                <span class="back">
+                                    Homero Menchaca
+                                    <span class="role">UX Architect</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/12.jpg" alt="Homero Menchaca">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Homero Menchaca</h3>
+                                    <h4>UX Architect</h4>
+                                    <p>UX Design, Usability Testing, UX Research, Interaction design, Front-End Development, Prototyping, Wireframing.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/13.html" data-largeimg="img/people/13.jpg" data-title="Luis Flores" data-description="HTML5, CSS3, Sass, jQuery, jQuery UI, Coffeescript, Axure, Frameworks, Adobe Suite.">
+                            <span class="info">   
+                                <span class="front pic13"></span>
+                                <span class="back">
+                                    Luis Flores
+                                    <span class="role">UX Architect</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/13.jpg" alt="Luis Flores">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Luis Flores</h3>
+                                    <h4>UX Architect</h4>
+                                    <p>HTML5, CSS3, Sass, jQuery, jQuery UI, Coffeescript, Axure, Frameworks, Adobe Suite.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/14.html" data-largeimg="img/people/14.jpg" data-title="César Olivas" data-description="SharePoint Branding, Social SharePoint Branding, jQuery, .NET, HTML Expert, CSS Expert">
+                            <span class="info">   
+                                <span class="front pic14"></span>
+                                <span class="back">
+                                    César Olivas
+                                    <span class="role">Team Lead</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/14.jpg" alt="César Olivas">
+                                </div>
+                                <div class="people-details">
+                                    <h3>César Olivas</h3>
+                                    <h4>Team Lead</h4>
+                                    <p>SharePoint Branding, Social SharePoint Branding, jQuery, .NET, HTML Expert, CSS Expert</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/15.html" data-largeimg="img/people/15.jpg" data-title="Omar Lara" data-description="SharePoint Branding, Social SharePoint Branding, NewsGator Social Webpart Branding, jQuery, .NET, HTML Expert, CSS Expert, MVC3, MVC4">
+                            <span class="info">   
+                                <span class="front pic15"></span>
+                                <span class="back">
+                                    Omar Lara
+                                    <span class="role">Team Lead</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/15.jpg" alt="Omar Lara">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Omar Lara</h3>
+                                    <h4>Team Lead</h4>
+                                    <p>SharePoint Branding, Social SharePoint Branding, NewsGator Social Webpart Branding, jQuery, .NET, HTML Expert, CSS Expert, MVC3, MVC4</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <a href="people/16.html" data-largeimg="img/people/17.jpg" data-title="Luis García" data-description="Information Architecure, User Interface, User Experience, Visual Design, Prototyping, Adobe Suite.">
+                            <span class="info">   
+                                <span class="front pic16"></span>
+                                <span class="back">
+                                    Luis García
+                                    <span class="role">User interface</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/17.jpg" alt="Luis García">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Luis García</h3>
+                                    <h4>Visual Design</h4>
+                                    <p>Information Architecure, User Interface, User Experience, Visual Design, Prototyping, Adobe Suite.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/18.html" data-largeimg="img/people/18.jpg" data-title="Karla Treviño" data-description="Information Architecure, User Interface, User Experience, Visual Design, Prototyping, Adobe Suite.">
+                            <span class="info">   
+                                <span class="front pic17"></span>
+                                <span class="back">
+                                    Karla Treviño
+                                    <span class="role">User Interface Designer</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/18.jpg" alt="Karla Treviño">
+                                </div>
+                                <div class="people-details">
+                                    <h3>Karla Treviño</h3>
+                                    <h4>Visual Designer</h4>
+                                    <p>Information Architecure, User Interface, User Experience,Visual Design, Prototyping, Adobe Suite.</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="people/18.html" data-largeimg="img/people/16.jpg" data-title="You" data-description="Please let us know all your skills">
+                            <span class="info">   
+                                <span class="front pic18"></span>
+                                <span class="back">
+                                    You
+                                    <span class="role">Your area of expertise</span>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="people-expander">
+                            <div class="expander-inner">
+                                <div class="icon close"></div>
+                                <div class="people-image">
+                                    <div class="loading"></div>
+                                    <img src="img/16.jpg" alt="You">
+                                </div>
+                                <div class="people-details">
+                                    <h3>You</h3>
+                                    <h4>Area of expertise</h4>
+                                    <p>Please describe your skills and knowledge</p>
+                                    <div class="quote"><span class="text"></span><span class="author"></span></div>
+                                    <div class="latest-projects">
+                                        <a href="img/people/projects/1.jpg" class="thumb"><img src="img/people/projects/thumbs/1.jpg" alt=""></a>
+                                        <a href="img/people/projects/2.jpg" class="thumb"><img src="img/people/projects/thumbs/2.jpg" alt=""></a>
+                                        <a href="img/people/projects/3.jpg" class="thumb"><img src="img/people/projects/thumbs/3.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
         <footer></footer>
     </body>
 </html>
