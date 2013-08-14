@@ -49,6 +49,15 @@ $layout-type-home: 'five boxes';
 		#content{
 			@include container;
 		}
+		.wrapper{
+			@include container;
+		}
+		#whatwedo .box{
+			@include span-columns(4,12);
+			&:nth-of-type(3n){
+				@include span-columns(4 omega,12);
+			}
+		}
 	}
 
 	@if $layout-type == 'featured graphic'{

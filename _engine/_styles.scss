@@ -163,7 +163,6 @@ ASCII generator: http://www.bagill.com/ascii-sig.php - Font Clb8X10 : Titles Clb
  --------------------------------------------------------------------------------------------- */
 
   header, body > .header{
-    
     background: $headerBgImage;
     @if $headerIsGradient{
       @include filter-gradient($headerBg, $headerBgBottom, vertical); // IE6-9
@@ -216,9 +215,12 @@ ASCII generator: http://www.bagill.com/ascii-sig.php - Font Clb8X10 : Titles Clb
     }
 
     @extend .positionA, .w100;
+    z-index: 100;
   }
   #xdlogo{
     animation-name: animateLogo;
+    margin-top:10px;
+
   }
   #avanade-logo{
     @extend .floatR;
@@ -244,11 +246,38 @@ ASCII generator: http://www.bagill.com/ascii-sig.php - Font Clb8X10 : Titles Clb
   height:58px;
   li{
     display: inline-block;
-    line-height: 58px;
+    
     width:20%;
-
+    a{
+      color:$white;
+      line-height: 58px;
+      display: block;
+      text-transform: uppercase;
+      @extend .animateBackground;
+      &:hover{
+        background: rgba(0,0,0,.5);
+      }
+    }
+    
   }
+  ul{
+    text-align: center;
+  }
+
+
 }
+
+    .menu .icon{
+      @extend .block, .floatL;
+      width:35px;
+      height:30px;
+      margin:12px 0 12px 20px;
+      background-image: url(../img/nav.svg);
+    }
+   
+    .menu li:nth-child(2) a .icon  { background-position: 0 35px;}
+    .menu li:nth-child(3) a .icon  { background-position: 0 75px;}
+    .menu li:nth-child(4) a .icon  { background-position: 0 120px;}
 
 /**=============================================================================================
  * ---------------------------------------------------------------------------------------------
@@ -292,21 +321,38 @@ ASCII generator: http://www.bagill.com/ascii-sig.php - Font Clb8X10 : Titles Clb
         width:100%;
       }
       h1{
-        text-align: right;
         width:50%;
-        @extend .floatR;
         line-height: 120%;
+        text-shadow: 2px 2px 1px rgba(30,30,30,0.5);
       }
-   
+      z-index: 2;
+      position: relative;
   }
   #leftmenu{
-      
+      position: fixed;
+      left: 0;
+      top:0;
+      .icon{
+        fill:yellow;
+      }
+      z-index: 1;
+      position: relative;
   }
   #belowthefold{
       
   }
   #whatwedo{
-      
+
+      height:100%;
+      @include background-image(radial-gradient(#fff, #ddd));
+      h3{
+        font-family: signikaregular; 
+        color:$black;
+        text-shadow: 2px 1px #fff;
+      }
+      .box{
+        margin-top: 15%;
+      }
   }
   #howwedoit{
       
