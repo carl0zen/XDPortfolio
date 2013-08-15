@@ -24,8 +24,20 @@
                     .script('js/vendor/jquery.js').wait(function(){
 
                     })
+                    
+
                     .script('js/modules.js')
-                    .script('js/app.js');
+                    
+                    .script('js/app.js').wait(function(e){
+
+                    })
+                    .script('js/vendor/swipe.js').wait(function(e){
+
+                        var mySwiper = new Swiper('.swiper-container',{
+                            pagination: '.pagination',
+                            paginationClickable: true
+                        });
+                    });
         </script>
     </head>
     <body >
@@ -110,66 +122,78 @@
         </section>
 
         <section id="whatwedo">
-            <div class="wrapper">
-                <h2>What we do</h2>
-                <article class="box ux">
-                    <div class="icon"></div>
-                    <h3>UX Architecture</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, qui, dolores, commodi, eligendi</p>
-                </article>
-                <article class="box ui">
-                    <div class="icon"></div>
-                    <h3>UI Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, qui, dolores, commodi, eligendi</p>
-                </article>
-                <article class="box development">
-                    <div class="icon"></div>
-                    <h3>Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, qui, dolores, commodi, eligendi</p>
-                </article>
-                <article class="hire-us">
-                    <a href="#contact" class="button">Hire-us</a>
-                    <p>We work with amazing clients, are you ready to be the next?</p>
-                </article>
-            </div>
-        </section>
-            <section id="howwedoit">
-                <div class="slider">
-                    <article class="discover">
-                        <div class="icon"></div>
-                        <h3>Discover</h3>
-                        <p>Research to define user scenarios and conceptual model</p>
+            <div class="wrapper toCenter">
+                <div class="center">
+                    <h2>What can we do?</h2>
+                    <article class="box ux">
+                        <div class="icon"><img src="img/icon_ux.svg" alt="User Experience"></div>
+                        <h3>UX Architecture</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, qui, dolores, commodi, eligendi</p>
                     </article>
-                    <article class="wireframing">
-                        <div class="icon"></div>
-                        <h3>Wireframing</h3>
-                        <p>Define the workflow, architecture and interaction design</p>
+                    <article class="box ui">
+                        <div class="icon"><img src="img/icon_design.svg" alt="Design"></div>
+                        <h3>UI Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, qui, dolores, commodi, eligendi</p>
                     </article>
-                    <article class="visualdesign">
-                        <div class="icon"></div>
-                        <h3>Visual Design</h3>
-                        <p>Style guide creation, typography selection and icon design</p>
-                    </article>
-                    <article class="development">
-                        <div class="icon"></div>
+                    <article class="box development">
+                        <div class="icon"><img src="img/icon_development.svg" alt="Development"></div>
                         <h3>Development</h3>
-                        <p>Code the Front-end interface using the appropriate technologies</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, qui, dolores, commodi, eligendi</p>
                     </article>
-                    
+                    <article class="hire-us">
+                        <a href="#contact" class="button">Hire-us</a>
+                        <p>We work with amazing clients, are you ready to be the next?</p>
+                    </article>
                 </div>
-                <div class="controls">
-                        <ul>
-                        <li><span class="icon discover"></span></li>
-                        <li><span class="icon wireframing"></span></li>
-                        <li><span class="icon visualdesign"></span></li>
-                        <li><span class="icon development"></span></li>
-                <li><span class="icon review"></span></li>
-                        <li><span class="icon useracceptance"></span></li>
-                    </ul>
+            </div>
+
+        </section>
+        <section id="howwedoit">
+
+                <div id="xd_process" class="swiper-container">
+                        <div class="swiper-wrapper">
+                        
+                            <article class="swiper-slide"> 
+                                <div class="centered">
+                                    <img class="icon" src="img/process_1.svg" alt="Discover">
+                                    <h3>Discover</h3>
+                                    <p>Research to define user scenarios and conceptual model</p>
+                                </div>
+                                
+                            </article>
+
+                            <article class="swiper-slide">
+                                <div class="centered">
+                                    <img class="icon" src="img/process_2.svg" alt="Wireframing">
+                                    <h3>Wireframing</h3>
+                                    <p>Define the workflow, architecture and interaction design</p>
+                                </div>
+                            </article>
+                            <article class="swiper-slide">
+                                <div class="centered">
+                                    <img class="icon" src="img/process_3.svg" alt="Visual Design">
+                                    <h3>Visual Design</h3>
+                                    <p>Style guide creation, typography selection and icon design</p>
+                                </div>
+                            </article>
+                            <article class="swiper-slide">
+                                <div class="centered">
+                                    <img class="icon" src="img/process_4.svg" alt="Development">
+                                    <h3>Development</h3>
+                                    <p>Code the Front-end interface using the appropriate technologies</p>
+                                </div>
+                            </article>
+                        
+                        </div>
+                        <div class="pagination"></div>
                 </div>
-            </section>
-            <section id="whoweare">
+          
+
+        </section>
+        <section id="whoweare">
+            <div class="wrapper">        
                 <h2>Meet each one of us</h2>
+
                 <ul id="people-grid">
                     <li>
                         <a href="people/1.html" 
@@ -753,7 +777,8 @@
                         </div>
                     </li>
                 </ul>
-            </section>
+            </div>
+        </section>
     
         <footer></footer>
     </body>
